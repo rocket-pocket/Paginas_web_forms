@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Basic Form</title>
 </head>
 <body>
@@ -13,17 +13,20 @@
     </header>
     <section>
         <h2>Formulario Get</h2>
-        <form action="" method="get">
-            <input type="text" name="user" id="" placeholder="Dime tu nombre">
+        <form action="" method="get"><!-- para formularios sin encriptar como informacion irrelevante-->
+            <input type="text" name="f1_user" id="f1_user" placeholder="Dime tu nombre">
+            <input type="text" name="f1_surname" id="f1_surname" placeholder="Apellido">
             <button type="submit">Enviar</button>
         </form>
         <h2>Formulario Post</h2>
-        <form action="post" method="post">
-            <input type="text" name="user" id="" placeholder="Dime tu nombre También">
+        <form action="mailto://" method="post"><!-- para formularios encriptados como los bancos -->
+            <input type="text" name="f2_user" id="f2_user" placeholder="Dime tu nombre También">
+            <input type="text" name="f2_surname" id="f2_surname" placeholder="Apellido">
             <button type="submit">Enviar</button>
         </form>
         <h2>Ejemplo de link</h2>
         <a href="https://www.google.com/?gws_rd=ssl">Google</a>
+        <a href="mailto:danielverdu123@gmail.com">danielverdu123@gmail.com</a> 
     </section>
     
 </body>
