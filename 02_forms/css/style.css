@@ -1,0 +1,13 @@
+body{
+    margin: 2rem;
+}
+.control-group{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+button{
+    background: purple;
+}

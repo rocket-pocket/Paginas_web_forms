@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <header>
+        <h1>Formularios</h1>
+    </header>
+    <form action="">
+        <fieldset>
+            <legend>Datos personales</legend>
+            <div class="control-group">
+                <label for="nombre">Nombre</label>
+                <!-- for= nombre de id, en este caso nombre, aumentan el espacio clickeable -->
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="control-group">
+                <label for="surname">Apellidos</label>
+                <input type="text" name="surname" id="surname" placeholder="Apellidos completos">
+                <!--REQUIERD ES POCO O NADA MODIFICABLE EN CUANTO ASPECTO-->
+            </div>
+            <div class="control-group">
+                <label for="pais">País</label>
+                <input type="text" value="ES" name="pais" id="pais" maxlength="2" placeholder="pais">
+                <!-- value="es" valor por defecto -->
+            </div>
+            <div class="control-group">
+                <label for="password">Pasword</label>
+                <input type="password" name="password" id="password" placeholder="dime tu pasword">
+                <!-- value="es" valor por defecto -->
+            </div>
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <fieldset>
+            <legend>Perfil</legend>
+            <div class="control-group">
+                <label for="">Correo</label>
+                <input type="email" name="email" id="email" placeholder="Apellidos completos" required>
+            </div>
+            <div class="control-group">
+                <label for="surname">Pagina webs</label>
+                <input type="url" name="url" id="url" placeholder="Apellidos completos" required>
+                
+            </div>
+            <div class="control-group">
+                <label for="surname">telefono</label>
+                <input type="tel" name="tel" id="tel" placeholder="Apellidos completos">
+                
+            </div>
+            <div class="control-group">
+                <label for="surname">Busqueda</label>
+                <input type="search" name="search" id="search" placeholder="Apellidos completos">
+            </div>
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <fieldset>
+            <legend>Información extra</legend>
+            <textarea name="" id="" cols="5" rows="10">Hola</textarea>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
