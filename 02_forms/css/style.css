@@ -1,6 +1,10 @@
 body{
     margin: 2rem;
 }
+/* form{
+    background: rgb(209, 153, 209);
+    padding: 2rem;
+} */
 .control-group{
     display: flex;
     justify-content: space-between;
@@ -10,4 +14,33 @@ body{
 }
 button{
     background: purple;
+    color: white;
+}
+textarea{
+    width: 30rem;
+    height: 15rem;
+    background: linear-gradient(rgba(255, 95, 255, 0.3), rgba(0,255,95,0.4));
+}
+.check_group{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end; /* al cambiar el eje cambia el sentido y hay que poner a flex end*/
+    width: 50%;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+/* fieldset{
+    background: black;
+} */
+.select{
+    width: 100%;
+    font-size: 4rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: blue;
+}
+#curso{
+    width: 50%;
+    background: rgb(199, 118, 118);
+    color: white;
+    border: 0;
 }

@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./app.js"></script>
     <title>Formularios</title>
 </head>
 
@@ -13,7 +15,8 @@
     <header>
         <h1>Formularios</h1>
     </header>
-    <form action="">
+    <form id="formulario_ingresos" action="" method="get">
+        <input type="hidden" name="type" value="formulario_ingresos"><!-- datos para el servidor, como si fuera una variable almacenada -->
         <fieldset>
             <legend>Datos personales</legend>
             <div class="control-group">
@@ -36,6 +39,10 @@
                 <input type="password" name="password" id="password" placeholder="dime tu pasword">
                 <!-- value="es" valor por defecto -->
             </div>
+            <label for="edad">EDAD</label>
+            <input type="number" name="edad" id="edad" min="18" max="65">
+            <label for="hijos">Rango</label>
+            <input type="range" name="hijos" id="hijos" min="0" max="10">            
         </fieldset>
         <button type="submit">Enviar</button>
         <fieldset>
@@ -58,11 +65,67 @@
                 <label for="surname">Busqueda</label>
                 <input type="search" name="search" id="search" placeholder="Apellidos completos">
             </div>
+            <div class="control-group"><!-- input type="file" solo valdría en tipo POST -->
+                    <label for="archivo">Subir curriculum</label>
+                    <input type="file" name="archivo" id="archivo">
+            </div>
         </fieldset>
         <button type="submit">Enviar</button>
         <fieldset>
             <legend>Información extra</legend>
-            <textarea name="" id="" cols="5" rows="10">Hola</textarea>
+            <textarea name="info" id="info" cols="30" rows="10" placeholder="escribe tu texto aquí">Hola</textarea>
+            <input type="submit" value="otro js" onclick="saludar()">
+        </fieldset>
+        <!-- CHECKBOX -->
+        <fieldset>
+            <div class="check_group">
+                <label for="accepted">Leidas y aceptadas las condiciones</label>
+                <input type="checkbox" name="accepted" id="accepted" required>
+            </div>
+            
+        </fieldset>
+        <fieldset>
+            <legend>Curiosidades</legend>
+            <label for="color">Elije un Color</label>
+            <input type="color" name="color" id="color">
+        </fieldset>
+        <fieldset><!-- radio buttons -->
+            <legend>turno</legend>
+            <input type="radio" name="turno" id="manana" value="manana" checked><!-- checked dependiendo de donde se ponga es ilegal, mejor nom poner -->
+            <label for="manana">mañana</label>
+            <input type="radio" name="turno" id="noche" value="noche">
+            <label for="noche">noche</label>
+        </fieldset> 
+        <!-- select options seleccionar varias opciones -->       
+        <fieldset class="select">
+            <legend>Curso</legend>
+            <select name="curso" id="curso">Cursos
+                <option value="">selecciona curso</option>
+                <optgroup label="programacion"> <!-- agrupa las diferentes opciones. ponerlo es opcional -->
+                    <option value="web">Pginas web</option>
+                    <option value="PHP">Programación PHP</option>
+                    <option value="Java">Curso de Java</option>
+                </optgroup>
+                
+                <optgroup label="sistemas">
+                    <option value="sisweb">ServidoresWeb</option>
+                    <option value="win">webindows</option>
+                    <option value="lin">LINUX</option>
+                </optgroup>
+                
+            </select>            
+        </fieldset>
+        <!-- botones , existen tres tipos-->
+        <fieldset>
+            <input type="button" value="send"><!-- el texto para este tipo de botón va en el valor -->
+            <input type="submit" value="enviar"> <!-- envia la información -->
+            <input type="reset" value="reset"> <!-- borrar lo que tenemos en el formulario -->
+            <button type="button" onclick="saludar()"><i class="fas fa-child"></i></button><!-- JAVASCRIPT -->
+            <button class="enviar" title="enviar" type="submit"><i class="fas fa-seedling"></i></button><!-- poniendo un tittle mejora la usabilidad -->
+            <button type="reset"><i class="far fa-trash-alt"></i></button><!-- es lo mismo la etiqueta button que la etiqueta input -->
+        </fieldset>
+        <fieldset>
+            <input type="week" name="semana" id="semana">
         </fieldset>
     </form>
 
