@@ -44,3 +44,19 @@ textarea{
     color: white;
     border: 0;
 }
+
+
+
+#btnControl {
+    display: none;
+}
+nav{
+    display:none;
+}
+
+#btnControl:checked + label > nav {
+    display: block;
+    font-size: 5rem;
+    font-size: 5rem;
+    color: red;
+}
