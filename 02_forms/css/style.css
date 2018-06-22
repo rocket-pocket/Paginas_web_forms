@@ -12,15 +12,7 @@ body{
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
 }
-button{
-    background: purple;
-    color: white;
-}
-textarea{
-    width: 30rem;
-    height: 15rem;
-    background: linear-gradient(rgba(255, 95, 255, 0.3), rgba(0,255,95,0.4));
-}
+
 .check_group{
     display: flex;
     flex-direction: row-reverse;
@@ -59,4 +51,19 @@ nav{
     font-size: 5rem;
     font-size: 5rem;
     color: red;
+}
+
+
+/* CSS EN FORMULARIOS */
+
+*:required{
+    box-shadow: 1px 2px 5px black;
+    border: 1px solid red;
+    color: crimson;
+}
+input[type="checkbox"]{
+    border: 1px solid blue;
+    color: green;
+    background: blue;
+    width: 50%;
 }

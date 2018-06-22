@@ -1,0 +1,18 @@
+.control-group{
+    margin: 2rem;
+}
+input[type="text"]:required{
+    border: 1px solid blue;
+    box-shadow: 1px 2px 5px red;
+}
+input[type="text"]:optional{
+    box-shadow: 1px 5px 6px blue;
+}
+input[type="checkbox"]{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid hotpink;
+
+}
