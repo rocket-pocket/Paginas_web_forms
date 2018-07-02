@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"parallelshell \"npm run server\" \"npm run vigilar\"",    
-    "vigilar":"nodemon -e scss -x \"sass scss:css\"",
-    "server":"http-server ..\"",
-    "sass":"sass scss:css",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "parallelshell \"npm run server\" \"npm run vigilar\"",
+    "vigilar": "nodemon -e scss -x \"sass scss:css\"",
+    "server": "http-server ..\"",
+    "sass": "sass scss:css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pug" : "pug -w -P ./06_Pug/src -o ./06_Pug/dist "
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,9 @@
     "bootstrap": "^4.1.1",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.3"
+  },
+  "devDependencies": {
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6"
   }
 }
