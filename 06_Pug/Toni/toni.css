@@ -1,0 +1,132 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, figure, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*MediaQuery 0 */
+.noru_wrapper {
+  /* creado para no petar el body de cosas, cuantas menos tenga mejor y se lo aplicamos en class a lo que queramos */
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: #ececec;
+  /*width: 95%;
+  margin-left: auto;  los margin auto funcionan si tienen width si no no hace nada 
+  margin-right: auto;
+  **Está colocado en el noru_wrapper
+  */
+}
+
+h1, h2 {
+  margin: 0.5rem;
+  color: crimson;
+}
+
+img {
+  /*width: 100%;  Para que ocupen el 100 de la pantalla */
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.hamburguesa {
+  max-width: 50px;
+  max-height: 50px;
+  float: right;
+}
+
+article .imgnorua, article .imgnorub {
+  padding: left;
+}
+article .imgnoreco {
+  max-width: 100%;
+}
+
+#topmenu {
+  display: none;
+}
+
+#botmenu {
+  visibility: visible;
+  margin-top: 1rem;
+  text-align: center;
+}
+#botmenu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: midnightblue;
+}
+#botmenu ul li {
+  float: left;
+}
+#botmenu ul li a {
+  display: block;
+  color: white;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+}
+#botmenu ul li a:hover {
+  background-color: crimson;
+}
+
+/*MediaQuery 1 */
+@media screen and (min-width: 525px) {
+  #topmenu {
+    visibility: visible;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  #topmenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: midnightblue;
+  }
+  #topmenu ul li {
+    float: left;
+  }
+  #topmenu ul li a {
+    display: block;
+    color: white;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+  }
+  #topmenu ul li a:hover {
+    background-color: crimson;
+  }
+
+  #botmenu {
+    display: none;
+  }
+
+  .hamburguesa {
+    display: none;
+  }
+}
+/*MediaQuery 2 */
+@media screen and (min-width: 850px) {
+  article .imgnorua, article .imgnorub {
+    padding: left;
+  }
+  article .imgnoreco {
+    max-width: 75%;
+  }
+}
+
+/*# sourceMappingURL=css/style.css.map */

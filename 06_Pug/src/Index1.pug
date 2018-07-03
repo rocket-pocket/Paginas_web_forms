@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+html(lang= idioma)
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title #{titulo}
+              
+
+    body
+
+
+        //Esto es un comentario
+
+        //Esto es un comentario 
+        de varias líneas
+
+        //- comentario de Pug
+
+        //- ATAJO: Añadiendo contenido en varias líneas
+
+        p Lorem, ipsum dolor sit amet consectetur adipisicing      elit. Expedita itaque modi iste voluptatem, vel dolores voluptas molestias dolore doloribus alias, dignissimos commodi vero quos officiis explicabo perferendis harum, cupiditate ratione.
+    
+
+        //Elementos inline
+
+        h1 Ejemplos de 
+            strong #{metaLenguaje.toUpperCase()}
+        p Pug es un 
+            b lenguaje de plantillas
+            |  basado en  Java script
+
+        //-Atributos
+        div(id="div1", class="principal") hola
+
+        //-Atajos atributos
+
+        div#div2.principal
+
+        //Bloques de expansión -> : seguido del elemento
+
+        nav 
+            ul
+                li: a(href="#") #{menuItem[0]}
+                li: a(href="#") #{menuItem[1]}
+
+        //- Variables con HTML 
+        -let html = "<script>alert('estás infectado')</script>"
+        div!= html
+
+            p hola
+                
+                    
+

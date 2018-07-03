@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang=idioma)
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title=titulo
+    body
+        h1 Pug avanzado.
+
+        //- Lógica mediante JavaScript
+        //- -let nombre = "Pepe"
+        - let nombre = 'María'
+        -if (nombre === 'Pepe'){
+            p hola otra vez, Pepe
+        -}else{
+            p Hola #{nombre}, ¿donde está Pepe?
+        -}
