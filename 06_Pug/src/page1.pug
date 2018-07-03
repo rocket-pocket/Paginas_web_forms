@@ -16,3 +16,11 @@ html(lang=idioma)
         -}else{
             p Hola #{nombre}, ¿donde está Pepe?
         -}
+
+        //-Lógica nativa (build-in) pug
+        - nombre = 'Javier'
+        if (nombre === 'Pepe')
+            p hola otra vez, Pepe
+        else
+            p Hola #{nombre}, ¿donde está Pepe?
+        
