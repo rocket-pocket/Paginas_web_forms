@@ -2,7 +2,7 @@
     "idioma" : "es",
     "metaLenguaje" : "pug",
     "titulo" : "Iniciando pug",
-    "menuItem" : ["Home", "About"]
+    "menuItem" : ["Home", "About", "Avanzado"]
 }
 
 

@@ -41,8 +41,11 @@ html(lang= idioma)
 
         nav 
             ul
-                li: a(href="#") #{menuItem[0]}
+                -let url = "#"+menuItem[0]
+                li: a(href=url) #{menuItem[0]}
+                -url = './page1.html'
                 li: a(href="#") #{menuItem[1]}
+                li: a(href="#") #{menuItem[2]}
 
         //- Variables con HTML 
         -let html = "<script>alert('estás infectado')</script>"

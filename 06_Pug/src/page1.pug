@@ -23,4 +23,14 @@ html(lang=idioma)
             p hola otra vez, Pepe
         else
             p Hola #{nombre}, ¿donde está Pepe?
+
+        //-Switch
+        - nombre = "Alicia"
+        case nombre
+            when "Pepe"
+                p hola otra vez, Pepe
+            when "Alicia"
+                p Hola #{nombre}, ¿donde está Pepe?
+            default
+                p hola #{nombre}!
         
