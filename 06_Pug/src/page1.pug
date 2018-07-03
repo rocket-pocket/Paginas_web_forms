@@ -33,4 +33,21 @@ html(lang=idioma)
                 p Hola #{nombre}, ¿donde está Pepe?
             default
                 p hola #{nombre}!
+
+        
+        //-Iteracionnes -> Each
+        - let aSecciones = ['Inicio', 'Porfolio', 'Clientess', 'About'] 
+            nav 
+                ul 
+                    each seccion in aSecciones 
+                        li: a(href="#"+seccion.toLowerCase())= seccion 
+
+        -let aOpciones = ['c#', 'JAVA', 'JavaScript']
+        -let opcionesName = 'cursos'
+            label(for=opcionesName) Selecciona un curso
+                select(name= opcionesName id=opcionesName)
+                    each val in aOpciones
+                        option(value=val)=val
+                button enviar
+                            
         
