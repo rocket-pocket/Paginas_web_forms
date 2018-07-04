@@ -36,7 +36,7 @@ html(lang=idioma)
 
         
         //-Iteracionnes -> Each
-        - let aSecciones = ['Inicio', 'Porfolio', 'Clientess', 'About'] 
+        - let aSecciones = ['Inicio', 'Porfolio', 'Clientes', 'About'] 
             nav 
                 ul 
                     each seccion in aSecciones 
@@ -48,6 +48,17 @@ html(lang=idioma)
                 select(name= opcionesName id=opcionesName)
                     each val in aOpciones
                         option(value=val)=val
-                button enviar
+                button(type="submit") enviar
+
+        //- Iteraciones each
+        - let aSections = ['Home', 'Portfolio', 'Clientes', 'About']
+        nav
+            ul
+                - let i = 0
+                while i < aSections.length
+                    li: a(href="#"+aSections[i].toLowerCase())= aSections[i]
+                    -i++
+                
+            
                             
         
