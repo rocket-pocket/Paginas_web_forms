@@ -1,0 +1,33 @@
+mixin cabecera()
+    header
+        h1 Mixins en Pug
+mixin menu(aItems)
+    nav
+        ul
+            each item in aItems
+                li: a(href="#"+item.toLowerCase())= item
+mixin input(name)
+    li
+        label(for="name".toLowerCase())= name+":"
+        block
+
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Mixins en Pug
+    body
+        +cabecera()
+        - let aSecciones = ['Inicio', 'Porfolio', 'Clientes', 'About']
+        +menu(aSecciones)
+        main
+            p Falta por hacer 
+            form(action="")
+                ul
+                    +input("Color") 
+                        input(type="text" id="color" name="color") 
+
+                    +input("Comentarios") 
+                        textarea(name="comentarios", cols="30", rows="10") 
