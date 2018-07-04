@@ -1,0 +1,21 @@
+include ./mixins.pug
+
+<!DOCTYPE html>
+html(lang=idioma)
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title=titulo
+    body
+        header
+            h1= titulo
+            block header
+            img(src="./assets/main.jpg", alt="")
+        nav
+            +menun(aSecciones)
+        main
+            block main
+        footer
+            adress #{autor} - #{autorMail}
+            small &copy; #{enpresa}, #{localidad}
