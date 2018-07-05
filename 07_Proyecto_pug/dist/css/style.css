@@ -1,5 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+nav ul {
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
-  background: blue;
+  background: #c2c2eb;
+}
+
+nav {
+  display: flex;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+header img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=dist/css/style.css.map */

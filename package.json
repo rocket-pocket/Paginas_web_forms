@@ -4,13 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"parallelshell \"npm run server\" \"npm run vigilar\" \"npm run pug\"", 
+    "start": "parallelshell \"npm run server\" \"npm run vigilar\" \"npm run pug\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "pug" : "pug -w -P -O ./06_Pug/config.json ./06_Pug/src/pug -o ./06_Pug/dist",  
-    "vigilar":"nodemon -e scss -x \"sass scss:css\"",
-    "server":"http-server ..\"",
-    "sass":"sass scss:css"
-    
+    "pug": "pug -w -P -O ./06_Pug/config.json ./06_Pug/src/pug -o ./06_Pug/dist",
+    "vigilar": "nodemon -e scss -x \"sass scss:css\"",
+    "server": "http-server ..\"",
+    "sass": "sass scss:css"
   },
   "repository": {
     "type": "git",
