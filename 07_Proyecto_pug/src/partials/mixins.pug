@@ -1,0 +1,13 @@
+
+-
+    let aSecciones = [
+        {label: 'Inicio', url: "./"}, 
+        {label: 'Porfolio', url: "./port.html"}, 
+        {label: 'Clientes', url: "./cli.html"}, 
+        {label: 'Acerca de', url: "./about.html"}]
+
+mixin menu(aItems)
+    nav
+        ul
+            each item in aItems
+                    li: a(href=item.url)= item.label
