@@ -1,31 +1,23 @@
 * {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 nav ul {
-  list-style: none;
-}
+  list-style: none; }
+
 nav a {
   text-decoration: none;
-  color: inherit;
-}
+  color: inherit; }
 
 body {
-  background: #c2c2eb;
-}
+  background: #c2c2eb; }
 
 nav {
-  display: flex;
-}
+  display: flex; }
 
 header {
   width: 100%;
   height: 100vh;
-  position: absolute;
-}
-header img {
-  width: 100%;
-  height: 200%;
-}
-
-/*# sourceMappingURL=dist/css/style.css.map */
+  position: absolute; }
+  header img {
+    width: 100%;
+    height: 500%; }

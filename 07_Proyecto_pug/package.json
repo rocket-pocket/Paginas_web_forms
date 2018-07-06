@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parallelshell \"npm run srv\" \"npm run pug:w\" \"npm run vigilar\"",
+    "start": "parallelshell \"npm run srv\" \"npm run pug:w\" \"npm run sass:w\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "pug": "pug -P -O ./config.json -p ./src/partials ./src/pug -o ./dist",
     "pug:w": "pug -w -P -O ./config.json -p ./src/partials ./src/pug -o ./dist",
-    "srv": "http-server",        
-    "vigilar":"nodemon -e src/scss -x \"npm run sass\"",
-    "sass":"sass src/scss:dist/css"
+    "srv": "http-server",
+    "vigilar": "nodemon -e scss -x \"npm run sass\"",
+    "sass": "sass src/scss:dist/css",
+    "sass:w":"node-sass --watch src/scss -o dist/css"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "popper.js": "^1.14.3"
   },
   "devDependencies": {
+    "node-sass": "^4.9.1",
     "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6"
   }
