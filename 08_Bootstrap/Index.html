@@ -13,24 +13,64 @@
     <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script><!-- 3º script de bootstrap -->
 </head>
 <body>
-    <header>
-        <h1>Aprendiendo Bootstrap</h1>
-    </header>
-    <div class="border center">Fuera del container</div>
-      <div class="container">
-        <div class="row">
-          <div class="col-4 border">
-            <p>Izquierda</p>
+    <div class="header_wrapper">
+        <div class="container">
+          <div class="row">
+            <header class="col-12">
+            <h1>Aprendiendo Bootstrap</h1>
+            </header>
           </div>
-          <div class="col-4 border">
-            <p>Centro</p>
-          </div>
-          <div class="col-4 border">
-            <p>Derecha</p>
-          </div>          
         </div>
       </div>
+        
       
-    
+  <div class="container">
+    <div class="row">
+        <div class=" mt-4">
+            <nav class="col-12 col-lg-2">
+              <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Bootstrap</a></li>
+                
+                
+                
+              </ul>
+              <button type="button" class="btn btn-info">Acceder</button>
+            </nav>
+            <main class="col-12 col-md-8 col-lg-7">
+              <h2>Contenido</h2>
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, repellendus. Totam voluptatem at eius enim libero, quisquam laborum, itaque perferendis incidunt, ea dolores animi quidem dignissimos illo voluptatibus nostrum labore.</p>
+                  <p>Autem deleniti necessitatibus a, dignissimos ea cumque nulla minima dolorum nostrum molestias nemo soluta voluptatem expedita quas hic dolor quaerat aspernatur. Dicta, suscipit ea necessitatibus aperiam numquam voluptas fugit expedita?</p>
+                  <p>Dolorem minima alias maxime assumenda iusto eveniet porro dolor, nesciunt cupiditate debitis nemo sint iste, qui atque quod corrupti explicabo quo facilis laboriosam quaerat. Impedit eaque quibusdam similique magnam repellendus!</p>
+
+                </div>
+                <div class="col-lg-6">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos repellendus voluptatibus ea aliquid reprehenderit, fugiat eius expedita tempora libero voluptates vitae tempore soluta ducimus assumenda optio, veritatis perspiciatis? Similique, ipsam.</p>
+                  <p>Commodi magnam repudiandae est voluptates, repellat amet possimus laborum! Error eum nulla quibusdam iusto! Laudantium voluptas explicabo vitae, deserunt, sapiente tempora esse dolores repellat voluptates voluptatem quo doloribus, nam expedita?</p>
+                  <p>Facilis harum aliquam quis nisi, numquam a velit laboriosam voluptates! Excepturi ex, facilis exercitationem unde ut veritatis, obcaecati libero reiciendis possimus architecto quasi iusto repellat. Neque debitis quod blanditiis enim!</p>
+
+                </div>
+              </div>
+            </main>
+            <aside class="col-12 col-md-4 col-lg-3">
+              <h2>Aside</h2>
+            </aside>
+          </div>
+    </div>
+
+  </div>   
+    <div class="footer-line">
+      <div class="container">
+        <div class="row">
+          <footer class="col-12 mt-4">
+            <p>Footer</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+   
 </body>
 </html>

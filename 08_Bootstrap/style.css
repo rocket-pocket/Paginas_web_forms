@@ -4,3 +4,15 @@ h1{
 .border{
     border: 1px solid black;
 }
+body{
+    margin: 0;
+}
+.header_wrapper{
+    background: rgb(153, 225, 228);
+    width: 100%;
+    text-align: center;
+}
+.footer-line{
+    border-top: 1px solid red;
+}
+
